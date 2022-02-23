@@ -1,5 +1,6 @@
 const clientModels = require('../models/clientModels');
 const { create } = require('../auth/jwtFunctions');
+const bcrypt = require('bcrypt');
 
 const getAllClients = async (data) => {
   const people = await clientModels.getAllClients(data);
@@ -14,9 +15,16 @@ const getClientById = async (id) => {
 };
 
 const loginClient = async (email, password) => {
-  const client = await clientModels.findByEmailClient(email, password);
-  const token = create(client);
-  return token;
+  const client = await clientModels.findByEmailClient(email);
+  const { password: hash } = client;
+  const result = await bcrypt.compare(password, hash);
+  if (!result) {
+    return { error: 'Invalid password!' };
+  }
+  else {
+    const token = create(client);
+    return token;
+  }
 }
 
 const createClient = async (data) => {

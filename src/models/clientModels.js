@@ -1,5 +1,6 @@
 const connect = require('./connection');
 const { ObjectId } = require('mongodb');
+const bcrypt = require('bcrypt');
 
 const getAllClients = async () => {
   const db = await connect();
@@ -9,16 +10,18 @@ const getAllClients = async () => {
 }
 
 const getClientById = async (id) => {
-  if (!ObjectId.isValid(id))
+  if (!ObjectId.isValid(id)) {
     return null;
-
+  }
   const db = await connect();
-  return await db.collection('client').findOne(ObjectId(id))
+  return await db.collection('client').findOne(ObjectId(id));
 }
 
 const createClient = async ({ name, email, password }) => {
+  saltRound = 12;
+  const hash = bcrypt.hashSync(password, saltRound);
   const { insertedId } = await connect().then((db) => db
-    .collection('client').insertOne({ name, email, password, role: 'user' }));
+    .collection('client').insertOne({ name, email, password: hash, role: 'user' }));
   return { name, email, role: 'user', _id: insertedId };
 }
 
