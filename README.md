@@ -114,11 +114,7 @@ git clone git@github.com:leoncomunicador/Desafio-Pro-Franchinsing.git
 crie um arquivo `.env` e coloque os valores de acordo com a configuração do seu banco de dados
   
   
-PORT= Escolha o numero da porta que você deseja
-HOST= localhost
-DB_NAME= Insira o nome que você deseja para o banco de dados
-SECRET= Escolha uma palavra qualquer para essa variável de ambiente
-
+PORT= Escolha o numero da porta, Exemplo: 3000
 
 
 Ainda Entre na pasta  
@@ -138,7 +134,8 @@ npm install
 
 ### Executando o projeto  
   
-  
-npm start  
+npm run dev  
 ou
-npm run dev
+npm start  
+
+
