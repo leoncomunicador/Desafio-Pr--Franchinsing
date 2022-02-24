@@ -118,22 +118,22 @@ PORT= Escolha o numero da porta, Exemplo: 3000
 Ainda Entre na pasta  
   
   
-cd Desafio-Pro-Franchinsing
+`cd Desafio-Pro-Franchinsing`
   
   
   
 ### Instalando as dependências  
   
   
-npm install  
+`npm install`
   
   
 
 
 ### Executando o projeto  
   
-npm run dev  
+`npm run dev`
 ou
-npm start  
+`npm start`
 
 
