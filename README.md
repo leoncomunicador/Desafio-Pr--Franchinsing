@@ -21,7 +21,7 @@
 
 # Construção do desafio
 
-É uma aplicação para uma cafeteria com o objetivo de resolver seu problema de controle de produtos no estoque de sua loja, para isso optei por construir uma API com arquitetura MSC e utilizando o banco de dados MongoDB, para o gerenciamento dos produtos e seus respectivos ingredientes;
+É uma aplicação para uma cafeteria para resolver o problema de controle de produtos no estoque de sua loja, no projeto foi utilizada a arquitetura MSC com o banco de dados MongoDB, para o gerenciamento dos produtos e ingredientes.
 
 ---
 
@@ -105,7 +105,7 @@ Abra o terminal de sua máquina
 e digite o comando abaixo para clonar o projeto.  
   
   
-git clone git@github.com:FredericoCanoeira/desafio-pro-franchising.git
+git clone git@github.com:leoncomunicador/Desafio-Pro-Franchinsing.git
    
   
   
