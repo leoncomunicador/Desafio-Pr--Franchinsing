@@ -81,7 +81,7 @@ Para executar o projeto sua máquina deve satisfazer os requisitos abaixo.
   
 Pré-requisitos  
   
-  
+ - git version 2.25.1  
  - node ^v14.17.0  
  - npm ^6.14.13  
  - mongodb ^4.4.0
