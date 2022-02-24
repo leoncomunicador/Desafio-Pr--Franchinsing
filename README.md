@@ -13,8 +13,6 @@
 - [Tecnologias envolvidas](#tecnologias-envolvidas)
 - [Requisitos do desafio](#requisitos-do-desafio)
 - [Requisitos desenvolvidos](#requisitos-desenvolvidos)
-- [Demonstração](#demonstracao)
-- [Referencias](#referencias)
 - [Instalação e uso](#instalação-e-uso)
 
 ---
@@ -105,7 +103,7 @@ Abra o terminal de sua máquina
 e digite o comando abaixo para clonar o projeto.  
   
   
-git clone git@github.com:leoncomunicador/Desafio-Pro-Franchinsing.git
+`git clone git@github.com:leoncomunicador/Desafio-Pro-Franchinsing.git`
    
   
   
@@ -120,7 +118,7 @@ PORT= Escolha o numero da porta, Exemplo: 3000
 Ainda Entre na pasta  
   
   
-cd desafio-pro-franchising
+cd Desafio-Pro-Franchinsing
   
   
   
